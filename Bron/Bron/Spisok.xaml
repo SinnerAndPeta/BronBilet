@@ -8,13 +8,18 @@
         Title="Список мероприятий" Height="575" Width="452" Icon="image/icon.png">
     <Grid Background="#FF100C25">
         <Image Margin="0,0,0,441" Source="/aaa.PNG" Stretch="Fill" OpacityMask="#FF070420" HorizontalAlignment="Center" Width="452"/>
-        <Label Content="Текущая дата и время " HorizontalAlignment="Left" Margin="40,29,0,0" VerticalAlignment="Top" Foreground="White" Width="168" FontWeight="Bold"/>
+        <Label Content="Текущая дата и время " Name="vrema" HorizontalAlignment="Left" Margin="40,29,0,0" VerticalAlignment="Top" Foreground="White" Width="168" FontWeight="Bold"/>
         <Label Content="Мероприятия" HorizontalAlignment="Right" Margin="0,132,170,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
         <Label Content="Поиск:" HorizontalAlignment="Left" Margin="106,162,0,0" VerticalAlignment="Top" Foreground="White" Width="74" FontSize="10"/>
-        <TextBox HorizontalAlignment="Center" Margin="0,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" Background="White"/>
+        <TextBox HorizontalAlignment="Center" Name="filtr" Margin="0,165,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="138" Background="White" TextChanged="TextBox_TextChanged"/>
         <Label Content="Фильтр:" HorizontalAlignment="Left" Margin="106,194,0,0" VerticalAlignment="Top" Foreground="White" Width="74" FontSize="10"/>
-        <ComboBox HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Width="138"/>
-        <DataGrid d:ItemsSource="{d:SampleData ItemCount=5}" Margin="17,233,10,144" FontSize="9"/>
+        <ComboBox Name="mer" HorizontalAlignment="Center" Margin="0,195,0,0" VerticalAlignment="Top" Width="138" SelectionChanged="mer_SelectionChanged">
+            <ComboBoxItem IsSelected="True" Content="Все"/>
+            <ComboBoxItem Content="Кинотеатр"/>
+            <ComboBoxItem Content="Театр"/>
+            <ComboBoxItem Content="Концерт"/>
+        </ComboBox>
+        <DataGrid Name="dataGrid"  Margin="17,233,10,144" FontSize="9" MouseDoubleClick="dataGrid_MouseDoubleClick"/>
         <Button Content="Забронировать" HorizontalAlignment="Left" Margin="159,459,0,0" VerticalAlignment="Top" Background="#FF0AE3B3" Width="138" Height="23"/>
         <Label Content="Далее вам надо будет ввести email, место, номер телефона для подтверждения" HorizontalAlignment="Left" Margin="62,487,0,0" VerticalAlignment="Top" Foreground="#FFA4A1A1" Width="348" FontSize="9"/>
 

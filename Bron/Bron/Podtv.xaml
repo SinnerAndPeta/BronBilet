@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bron"
         mc:Ignorable="d"
-        Title="Подтверждение бронирования" Height="369" Width="235" Icon="image/icon.png">
+        Title="Подтверждение бронирования" Height="369" Width="243" Icon="image/icon.png">
     <Grid Background="#FF070420">
         <Image Margin="0,40,0,0" Source="/Image2.png" Stretch="Fill" HorizontalAlignment="Left" Width="34" Height="230" VerticalAlignment="Top"/>
         <Border Background="White" BorderBrush="#FF070420" BorderThickness="1" Height="52" VerticalAlignment="Top" HorizontalAlignment="Left" Width="235">
@@ -13,12 +13,11 @@
         </Border>
         <Label Content="Вам придет письмо на почту по оплате" Margin="0,307,0,0" VerticalAlignment="Top" Foreground="#FFA4A1A1" FontSize="9" HorizontalAlignment="Center" Width="177"/>
         <Label Content="Электронная почта:" HorizontalAlignment="Left" Margin="31,64,0,0" VerticalAlignment="Top" Foreground="White" Width="172" FontSize="10"/>
-        <TextBox HorizontalAlignment="Left" Margin="39,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Background="White"/>
+        <TextBox x:Name="ema" HorizontalAlignment="Left" Margin="39,92,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Background="White"/>
         <Label Content="Номер телефона:" HorizontalAlignment="Left" Margin="31,136,0,0" VerticalAlignment="Top" Foreground="White" Width="172" FontSize="10"/>
-        <TextBox HorizontalAlignment="Left" Margin="37,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Background="White"/>
-        <Label Content="Выберите место:" HorizontalAlignment="Left" Margin="31,209,0,0" VerticalAlignment="Top" Foreground="White" Width="94" FontSize="10"/>
-        <ComboBox HorizontalAlignment="Left" Margin="36,230,0,0" VerticalAlignment="Top" Width="90"/>
-        <Button Content="Подтвердить" HorizontalAlignment="Center" Margin="0,278,0,0" VerticalAlignment="Top" Background="#FF0AE3B3" Width="118" Height="24"/>
-
+        <TextBox x:Name="telef" HorizontalAlignment="Left" Margin="37,166,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Background="White"/>
+        <Label Content="Введите место:" HorizontalAlignment="Left" Margin="31,209,0,0" VerticalAlignment="Top" Foreground="White" Width="94" FontSize="10"/>
+        <Button Content="Подтвердить" HorizontalAlignment="Center" Margin="0,278,0,0" VerticalAlignment="Top" Background="#FF0AE3B3" Width="118" Height="24" Click="Button_Click"/>
+        <TextBox Name="me" HorizontalAlignment="Left" Margin="37,232,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="180" Background="White"/>
     </Grid>
 </Window>

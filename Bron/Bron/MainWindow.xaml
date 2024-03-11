@@ -12,6 +12,6 @@
         <Label Content="Желаете забронировать билет на мероприятие?" HorizontalAlignment="Center" Margin="0,334,0,0" VerticalAlignment="Top" Foreground="White" Width="280"/>
         <Label Content="Тогда скорее нажимай сюда!" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top" Foreground="#FFA4A1A1" Width="148" FontSize="9"/>
         <Label Content="↓" HorizontalAlignment="Center" Margin="0,387,0,0" VerticalAlignment="Top" Foreground="#FFA4A1A1" Width="20" FontSize="14"/>
-        <Button Content="Перейти к бронированию" HorizontalAlignment="Left" Margin="72,416,0,0" VerticalAlignment="Top" Background="#FF0AE3B3" Width="154" Height="28"/>
+        <Button Content="Перейти к бронированию" HorizontalAlignment="Left" Margin="72,416,0,0" VerticalAlignment="Top" Background="#FF0AE3B3" Width="154" Height="28" Click="Button_Click"/>
     </Grid>
 </Window>
