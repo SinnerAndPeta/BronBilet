@@ -5,8 +5,13 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Bron"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="Главное меню" Height="498" Width="305" Icon="image/icon.png">
+    <Grid Background="#FF070420">
+        <Image Margin="0,0,0,179" Source="/Image1.png" Stretch="Fill" HorizontalAlignment="Center" Width="305"/>
+        <Label Content="Добро пожаловать!" HorizontalAlignment="Left" Margin="92,303,0,0" VerticalAlignment="Top" Foreground="White" FontWeight="Bold"/>
+        <Label Content="Желаете забронировать билет на мероприятие?" HorizontalAlignment="Center" Margin="0,334,0,0" VerticalAlignment="Top" Foreground="White" Width="280"/>
+        <Label Content="Тогда скорее нажимай сюда!" HorizontalAlignment="Center" Margin="0,365,0,0" VerticalAlignment="Top" Foreground="#FFA4A1A1" Width="148" FontSize="9"/>
+        <Label Content="↓" HorizontalAlignment="Center" Margin="0,387,0,0" VerticalAlignment="Top" Foreground="#FFA4A1A1" Width="20" FontSize="14"/>
+        <Button Content="Перейти к бронированию" HorizontalAlignment="Left" Margin="72,416,0,0" VerticalAlignment="Top" Background="#FF0AE3B3" Width="154" Height="28"/>
     </Grid>
 </Window>
